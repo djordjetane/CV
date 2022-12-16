@@ -7,10 +7,8 @@ jobs:
     outputs:
       release_id: ${{ steps.create_release.outputs.id }}
       upload_url: ${{ steps.create_release.outputs.upload_url }}
-    steps:
-    - name: Set up Git repository
-      uses: actions/checkout@v3
-
+    steps:    
+    - uses: actions/checkout@v3
     - name: Create Tag
       id: create_tag
       run: |
@@ -31,7 +29,8 @@ jobs:
   publish:
     needs: [release]
     runs-on: ubuntu-latest
-    steps:    
+    steps:
+    - uses: actions/checkout@v3    
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
