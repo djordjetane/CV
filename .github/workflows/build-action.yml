@@ -35,6 +35,7 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: DjordjeTanaskovicCV.tex
+    
     - name: Upload PDF file
       uses: actions/upload-release-asset@v1
       env:
@@ -51,4 +52,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         release_id: ${{ needs.release.outputs.release_id }}
-
+    - name: Clean old releases
+      uses: eregon/keep-last-n-releases@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        n: 3
+        remove_tags_without_release: true
