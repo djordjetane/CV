@@ -36,12 +36,12 @@ jobs:
       with:
         root_file: DjordjeTanaskovicCV.tex
     - name: Upload PDF file
-      uses: actions/create-release@v1
+      uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: ./DjordjeTanaskovicCV.pdf
+        asset_path: DjordjeTanaskovicCV.pdf
         asset_name: DjordjeTanaskovicCV.pdf
         asset_content_type: application/pdf
 
