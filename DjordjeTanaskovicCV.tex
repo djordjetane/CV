@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% DjordjeTanaskovic-CV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper]{moderncv}    
-\usepackage[11pt]{extsizes}
+\usepackage[12pt]{extsizes}
 % \usepackage{xcolor}
 
 \moderncvstyle{banking}
@@ -11,7 +11,7 @@
 % \usepackage{microtype}                             
 \usepackage{lastpage}                       
 %\usepackage[scale=0.9, top=0.5in, bottom=0.5in]{geometry}
-\usepackage[top=0.5in, bottom=0.5in, left=0.3in, right=0.5in]{geometry}
+\usepackage[top=1in, bottom=0.5in, left=0.3in, right=0.6in]{geometry}
 % \setlength{\hintscolumnwidth}{4.1cm}
 \usepackage[absolute,overlay]{textpos} 
 \usepackage{mathptmx}
@@ -21,7 +21,7 @@
 
 \usepackage{multicol}
 \usepackage{enumitem}
-\setlist[enumerate,itemize]{itemsep=3pt, leftmargin=25pt}
+\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=25pt}
  
 %\renewcommand{\sectionfont}{\Large\bfseries\scshape}
 \renewcommand{\sectionfont}{\fontsize{14pt}{18pt}\bfseries\scshape}
@@ -50,7 +50,6 @@
 
 %\textbf{}\\\\
 \makecvtitle
-\vspace{-2em}
 %\vspace{-1em}
 %\textbf{}\\ 
 
@@ -61,69 +60,82 @@
 %-----       resume       ---------------------------------------------------------
 
 %--------------------------------------------------------------------------------------
-\section{Education}
+\section{Experience}
 
 \begin{itemize}
+	\item \textbf{Junior DevOps Engineer} \hfill [May 2023 - ]\\
+	\textit{Finbet d.o.o.}
+\end{itemize}	
 
-	\item \textbf{\href{http://www.matf.bg.ac.rs/eng/m/94/osnovne-informatics/}{Bachelor studies - Informatics}} \hfill [Sep 2017 - ]\\
-	\textit{Faculty of Mathematics, University of Belgrade}				
+\section{Certification}
+
+\begin{itemize}
+	\item \textbf{\href{https://aws.amazon.com/certification/certified-solutions-architect-associate/}{AWS Certified Solutions Architect - Associate}} \hfill [Jan 2024]%\\
 	
-	%\vspace{0.4em}	
-	\item \textbf{Professional Courses:}
-	\vspace{-0.5em}
-	\begin{itemize}
-		\setlength\itemsep{0.5pt}
-		\item \textbf{DevOps} \hfill[Oct 2021 - Dec 2021]\\
-		\small\textit{Endava}\normalsize
+	% \item \textbf{\href{http://www.matf.bg.ac.rs/eng/m/94/osnovne-informatics/}{Bachelor studies - Informatics}} \hfill [Sep 2017 - ]\\
+	% \textit{Faculty of Mathematics, University of Belgrade}				
+	
+	% %\vspace{0.4em}	
+	% \item \textbf{Professional Courses:}
+	% \vspace{-0.5em}
+	% \begin{itemize}
+	% 	\setlength\itemsep{0.5pt}
+	% 	\item \textbf{DevOps} \hfill[Oct 2021 - Dec 2021]\\
+	% 	\small\textit{Endava}\normalsize
 
-		\item \textbf{Programming Network Traffic} \hfill[Oct 2021 - Dec 2021]\\
-		\small\textit{Syrmia}\normalsize
+	% 	\item \textbf{Programming Network Traffic} \hfill[Oct 2021 - Dec 2021]\\
+	% 	\small\textit{Syrmia}\normalsize
 
-		\item \textbf{Game Development in C++} \hfill[Feb 2020 - Jun 2020]\\
-		\small\textit{Ubisoft Belgrade}\normalsize
-	\end{itemize}
+	% 	\item \textbf{Game Development in C++} \hfill[Feb 2020 - Jun 2020]\\
+	% 	\small\textit{Ubisoft Belgrade}\normalsize
+	% \end{itemize}
 	
 \end{itemize}
 
 
 %--------------------------------------------------------------------------------------
-\section{Selected Projects}	
+\section{Projects}	
 
 		\begin{itemize}
-
-			\item \textbf{\href{https://github.com/MATF-Computer-Networks-Projects/2021_DestinedSouls}{DestinedSouls}} \hfill[Nov 2021 - Jan 2022]\\
-			A dating platform that connects two users who like each other. Non-blocking server using Java NIO and Angular for 
-			web part. Client-server communication has been achieved using HTTP (for general requests) and Websocket (for chat).
-			Functionality for both protocols on the server has been written from scratch using only Java APIs.
+			\item \textbf{CBPm} (Finbet) \hfill[May 2023 - ]\\
+			Workflow management platform with support for organisational collaboration. \\
+			Worked on GitLab CI/CD pipelines, dockerization of microservices, AWS infrastructure, and Kubernetes deployments.
+			% \item \textbf{\href{https://github.com/MATF-Computer-Networks-Projects/2021_DestinedSouls}{DestinedSouls}} \hfill[Nov 2021 - Jan 2022]\\
+			% A dating platform that connects two users who like each other. Non-blocking server using Java NIO and Angular for 
+			% web part. Client-server communication has been achieved using HTTP (for general requests) and Websocket (for chat).
+			% Functionality for both protocols on the server has been written from scratch using only Java APIs.
 			
-			%\item \textbf{\href{https://github.com/djordjetane/TEngine/tree/develop}{TEngine}} \hfill[Oct 2021 - ]\\
-			%3D C++ Game Engine; Continuation of previous project(s). Simple template-based ECS architecture, using
-			%OpenGL (glad + glfw3). Spare time solo project; still under heavy development. Currently useful for 
-			%creating quick single static scenes and testing GLSL shaders on them.
+			\item \textbf{TRI-Jackpot} (Finbet) \hfill[Jan 2024 - ]\\
+			Addition for TRI-SportsBook. Platform for managing sports and players. \\
+			Worked on GitLab CI/CD pipelines, dockerization of microservices, AWS infrastructure, and Kubernetes deployments.
+			% %\item \textbf{\href{https://github.com/djordjetane/TEngine/tree/develop}{TEngine}} \hfill[Oct 2021 - ]\\
+			% %3D C++ Game Engine; Continuation of previous project(s). Simple template-based ECS architecture, using
+			% %OpenGL (glad + glfw3). Spare time solo project; still under heavy development. Currently useful for 
+			% %creating quick single static scenes and testing GLSL shaders on them.
 			
-			\item \textbf{\href{https://github.com/djordjetane/GolfGL}{GolfGL}} \hfill[Jan 2021 - Jul 2021]\\
-			3D game written in C++, using OpenGL (glad + glfw3). Solo project for faculty course Computer Graphics. 
-			It features advanced graphics settings (ex. PBR, FXAA), terrain generation from a height map, gradient traversal, skybox.
-			Cross-platform for Windows and Unix (using CMake).
-			%Project was acknowledged as the best in the school year 2020/21.
+			% \item \textbf{\href{https://github.com/djordjetane/GolfGL}{GolfGL}} \hfill[Jan 2021 - Jul 2021]\\
+			% 3D game written in C++, using OpenGL (glad + glfw3). Solo project for faculty course Computer Graphics. 
+			% It features advanced graphics settings (ex. PBR, FXAA), terrain generation from a height map, gradient traversal, skybox.
+			% Cross-platform for Windows and Unix (using CMake).
+			% %Project was acknowledged as the best in the school year 2020/21.
 
-			\item \textbf{\href{https://gitlab.com/matfpveb/projekti/2020-2021/18-Tutored}{Tutored}} \hfill[Apr 2021 - Jun 2021]\\
-			Web platform for teaching and advertising courses. It offers lecturer a simple way to organize classes, create quizzes and homework, and share materials with enrolled students.
-			Course attendees can give a positive or negative mark to the teacher when the course ends. Angular, NodeJS (Express) and PostgreSQL were used. 
-			I did full-stack (mainly backend).
+			% \item \textbf{\href{https://gitlab.com/matfpveb/projekti/2020-2021/18-Tutored}{Tutored}} \hfill[Apr 2021 - Jun 2021]\\
+			% Web platform for teaching and advertising courses. It offers lecturer a simple way to organize classes, create quizzes and homework, and share materials with enrolled students.
+			% Course attendees can give a positive or negative mark to the teacher when the course ends. Angular, NodeJS (Express) and PostgreSQL were used. 
+			% I did full-stack (mainly backend).
 
-			\item \textbf{\href{https://github.com/idakucamupeva/dokazano_bezbedno}{ProvenToBeSafe}} \hfill[Apr 2021]\\
-			Hackathon project; Web app in JS that analyzes if your planned journey to other towns in Serbia is safe by scraping
-			government and popular media websites. My main responsibility was Google Maps API integration and adaptation; 
-			important places selection based on route and general client behavior.
+			% \item \textbf{\href{https://github.com/idakucamupeva/dokazano_bezbedno}{ProvenToBeSafe}} \hfill[Apr 2021]\\
+			% Hackathon project; Web app in JS that analyzes if your planned journey to other towns in Serbia is safe by scraping
+			% government and popular media websites. My main responsibility was Google Maps API integration and adaptation; 
+			% important places selection based on route and general client behavior.
 		
-			%\item \textbf{\href{https://github.com/djordjetane/SnakeGame}{SnakeGame}} \hfill[Apr 2020 - May 2020]\\
-			%Developed with game engine created during a GameDev course. Modern version of legendary Snake game with levels 
-			%and obstacles. I implemented snake steering behavior on collision, levels environment, and fruit generation.
+			% %\item \textbf{\href{https://github.com/djordjetane/SnakeGame}{SnakeGame}} \hfill[Apr 2020 - May 2020]\\
+			% %Developed with game engine created during a GameDev course. Modern version of legendary Snake game with levels 
+			% %and obstacles. I implemented snake steering behavior on collision, levels environment, and fruit generation.
 
-			\item \textbf{\href{https://github.com/djordjetane/CallGraph}{CallGraph}} \hfill[Nov 2019 - Jan 2020]\\
-			Program for static code analysis; generates a callgraph from C or C++ source code. Developed in C++ using 
-			ImGui and Clang-Tools. I was liable for frontend and worked on graph routing.
+			% \item \textbf{\href{https://github.com/djordjetane/CallGraph}{CallGraph}} \hfill[Nov 2019 - Jan 2020]\\
+			% Program for static code analysis; generates a callgraph from C or C++ source code. Developed in C++ using 
+			% ImGui and Clang-Tools. I was liable for frontend and worked on graph routing.
 
 		\end{itemize}
 
@@ -132,9 +144,9 @@
 
 	\begin{itemize}
 		
-		\item \textbf{Programming Languages: } C$\slash$C++, Python, Java, GLSL, JS$\slash$TS
-		\item \textbf{Libraries: } Qt, ImGui, OpenGL, Angular, Express, Knex \dots
-		\item \textbf{Tools: } Git, Docker, Nginx, Rclone, CMake, Clangtools, Valgrind, CI$\slash$CD tools		
+		\item \textbf{Cloud: } AWS, Azure
+		\item \textbf{Tools: } Git, Docker, ArgoCD, CI$\slash$CD tools, Nginx, SonarQube
+		\item \textbf{Programming Languages: } C$\slash$C++, Python, Java, JS$\slash$TS		
 		\item \textbf{Languages: } English (FCE degree), Serbian
 		
 	\end{itemize}
@@ -155,7 +167,6 @@
 	\begin{multicols*}{2}
 		\begin{itemize}
 			\setlength\itemsep{-1.2pt}
-			\item Mentoring freshmen
 			\item Enjoy working in a team
 			\item Motivated to learn and improve
 			%\columnbreak
