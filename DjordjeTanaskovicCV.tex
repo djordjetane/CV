@@ -21,7 +21,7 @@
 
 \usepackage{multicol}
 \usepackage{enumitem}
-\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=35pt}
+\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=30pt}
  
 %\renewcommand{\sectionfont}{\Large\bfseries\scshape}
 \renewcommand{\sectionfont}{\fontsize{14pt}{18pt}\bfseries\scshape}
@@ -62,7 +62,7 @@
 %--------------------------------------------------------------------------------------
 \section{Experience}
 
-\begin{itemize}
+\begin{itemize}	
 	\item \textbf{Junior DevOps Engineer} \hfill [May 2023 - ]\\
 	\textit{Finbet d.o.o.}
 \end{itemize}	
@@ -100,11 +100,24 @@
 		\begin{itemize}
 			\item \textbf{CBPm} (Finbet) \hfill[May 2023 - ]\\
 			Workflow management platform with support for organisational collaboration. \\
-			Worked on GitLab CI/CD pipelines, dockerization of microservices, scripting AWS infrastructure via Terraform, and Kubernetes deployments.
+			\begin{itemize}
+				\vspace{-1.5em}
+				\setlength\itemsep{0.1em}
+				\item Implemented GitLab CI/CD pipelines to automate software quality checks, builds, and delivery
+				\item Dockerizaton of microservices
+				\item Automated creation of AWS infrastructure using Terraform
+				\item Managed Kubernetes application deployments using Helm and ArgoCD
+			\end{itemize}
 			
 			\item \textbf{TRI-Jackpot} (Finbet) \hfill[Jan 2024 - ]\\
-			Addition for TRI-SportsBook. Platform for managing sports and players. \\
-			Worked on GitLab CI/CD pipelines, dockerization of microservices, AWS infrastructure, and Kubernetes deployments.
+			Platform for Betting pools. \\
+			\begin{itemize}
+				\vspace{-1.5em}
+				\setlength\itemsep{0.1em}
+				\item Implemented GitLab CI/CD pipelines to automate software quality checks, builds, and releases
+				\item Dockerizaton of microservices
+				\item Implemented AWS and On-Premise Kubernetes solution and managed it using Helm and ArgoCD
+			\end{itemize}
 
 			% \item \textbf{\href{https://github.com/MATF-Computer-Networks-Projects/2021_DestinedSouls}{DestinedSouls}} \hfill[Nov 2021 - Jan 2022]\\
 			% A dating platform that connects two users who like each other. Non-blocking server using Java NIO and Angular for 
@@ -147,10 +160,10 @@
 
 	\begin{itemize}
 		
-		\item \textbf{Cloud: } AWS, Azure
+		\item \textbf{Cloud: } AWS
 		\item \textbf{Tools: } Docker, Kubernetes, Git, ArgoCD, GitLab CI, Helm, Terraform, Nginx, SonarQube, \dots
 		\item \textbf{OS: } Linux, Windows
-		\item \textbf{Programming Languages: } C$\slash$C++, Python, Java, JS$\slash$TS
+		\item \textbf{Programming Languages: } Bash, Python, C$\slash$C++, Java, JS$\slash$TS
 		\item \textbf{Languages: } English (FCE degree), Serbian
 		
 	\end{itemize}
@@ -173,14 +186,12 @@
 			\setlength\itemsep{-1.2pt}
 			\item Enjoy working in a team
 			\item Motivated to learn and improve
-			%\columnbreak
-			\item Hardware entusiast
-			\item Passionate gamer
+			\item Hardware entusiast			
 			\item Sport, music \& classic movies lover
 			%\columnbreak
 		\end{itemize}		
 	\end{multicols*}
-	
+
 %--------------------------------------------------------------------------------------
 \end{document}
 
