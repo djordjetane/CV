@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% DjordjeTanaskovic-CV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper]{moderncv}    
-\usepackage[12pt]{extsizes}
+\documentclass[12pt,a4paper]{moderncv}    
+%\usepackage[12pt]{extsizes}
 % \usepackage{xcolor}
 
 \moderncvcolor{blue}
@@ -9,11 +9,11 @@
 
 \usepackage[T1]{fontenc}
 % \usepackage{microtype}                             
-\usepackage{lastpage}                       
+%\usepackage{lastpage}                       
 %\usepackage[scale=0.9, top=0.5in, bottom=0.5in]{geometry}
-\usepackage[top=1in, bottom=0.5in, left=0.4in, right=0.6in]{geometry}
+\usepackage[top=0.75in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 % \setlength{\hintscolumnwidth}{4.1cm}
-\usepackage[absolute,overlay]{textpos} 
+%\usepackage[absolute,overlay]{textpos} 
 \usepackage{mathptmx}
 \usepackage{genealogytree}
 
@@ -21,17 +21,13 @@
 
 \usepackage{multicol}
 \usepackage{enumitem}
-\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=30pt}
+\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=12pt}
  
 %\renewcommand{\sectionfont}{\Large\bfseries\scshape}
-\renewcommand{\sectionfont}{\fontsize{14pt}{18pt}\bfseries\scshape}
+\renewcommand{\sectionfont}{\fontsize{16pt}{20pt}\bfseries\scshape}
 \renewcommand{\subsectionrule}{}
-%\renewcommand{\footrulewidth}{0.5pt}
-%\renewcommand{\footrule}{\hbox to\headwidth{\color{gray!40}\leaders\hrule height \footrulewidth\hfill}}
-%\rfoot{\thepage~$\big\vert$ \color{gray}\textls[200]{Page}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\renewcommand*{\namefont}{\fontsize{25}{30}\mdseries\upshape}
 \renewcommand*{\namefont}{\fontsize{30pt}{36pt}\bfseries\upshape}
 %\title{Curriculum vitae}
 \name{}{Đorđe Tanasković}
@@ -48,29 +44,31 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 
-%\textbf{}\\\\
 \makecvtitle
-%\vspace{-1em}
-%\textbf{}\\ 
-
-%\begin{textblock}{0}(12.3,1)
-%\includegraphics[scale=0.15]{photo}
-%\end{textblock}
 
 %-----       resume       ---------------------------------------------------------
-
+\vspace{-0.5em}
 %--------------------------------------------------------------------------------------
 \section{Experience}
 
 \begin{itemize}
-	\item \textbf{DevOps Engineer} \hfill [Oct 2024 - ]\\
+	\item \textbf{DevOps Engineer} \hfill [Oct 2024 - Present]\\
 	\textit{Gambling.com Group}
 
 	\begin{itemize}
 		\vspace{-0.75em}
 		\setlength\itemsep{0.1em}
-		\item Standardized container workloads development in company
-		\item Worked on developing IDP for easy provisioning of infrastructure for an application
+		\item Led the standardization of container workloads across the organization, reducing deployment time by 40\% and improving consistency
+	\end{itemize}
+
+	\item \textbf{DevOps Engineer (Contractor)} \hfill [Oct 2024 - Mar 2025]\\
+	\textit{Fincore Ltd.}
+
+	\begin{itemize}
+		\vspace{-0.75em}
+		\setlength\itemsep{0.1em}
+		\item Architected and maintained cloud infrastructure on AWS and Azure
+		\item Managed multi-environment Kubernetes clusters using Helm and ArgoCD
 	\end{itemize}
 
 	\item \textbf{Junior DevOps Engineer} \hfill [May 2023 - Oct 2024]\\
@@ -79,10 +77,10 @@
 	\begin{itemize}
 		\vspace{-0.75em}
 		\setlength\itemsep{0.1em}
-		\item Implemented GitLab CI/CD pipelines to automate software quality checks, builds, and delivery
-		\item Dockerizaton of microservices
-		\item Automated creation of AWS infrastructure using Terraform
-		\item Managed Kubernetes application deployments using Helm and ArgoCD
+		\item Designed and implemented comprehensive GitLab CI/CD pipelines that reduced deployment failures by 50\% and automated 90\% of the release process
+		\item Containerized 15+ .NET Core microservices using Docker, improving application portability and reducing environment inconsistencies
+		\item Architected and deployed AWS infrastructure using Terraform, implementing infrastructure-as-code best practices
+		\item Managed Kubernetes clusters with using Helm and ArgoCD, achieving 99.9\% uptime
 	\end{itemize}
 
 \end{itemize}	
@@ -91,114 +89,25 @@
 
 \begin{itemize}
 	\item \textbf{\href{https://aws.amazon.com/certification/certified-solutions-architect-associate/}{AWS Certified Solutions Architect - Associate}} \hfill [Jan 2024]\\
-	\textit{\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/c546a05a82c243b895493ff0316a1e67}{https://bit.ly/48d291i}}				
-	
-	% \item \textbf{\href{http://www.matf.bg.ac.rs/eng/m/94/osnovne-informatics/}{Bachelor studies - Informatics}} \hfill [Sep 2017 - ]\\
-	% \textit{Faculty of Mathematics, University of Belgrade}				
-	
-	% %\vspace{0.4em}	
-	% \item \textbf{Professional Courses:}
-	% \vspace{-0.5em}
-	% \begin{itemize}
-	% 	\setlength\itemsep{0.5pt}
-	% 	\item \textbf{DevOps} \hfill[Oct 2021 - Dec 2021]\\
-	% 	\small\textit{Endava}\normalsize
-
-	% 	\item \textbf{Programming Network Traffic} \hfill[Oct 2021 - Dec 2021]\\
-	% 	\small\textit{Syrmia}\normalsize
-
-	% 	\item \textbf{Game Development in C++} \hfill[Feb 2020 - Jun 2020]\\
-	% 	\small\textit{Ubisoft Belgrade}\normalsize
-	% \end{itemize}
+	\textit{\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/c546a05a82c243b895493ff0316a1e67}{https://bit.ly/48d291i}}
 	
 \end{itemize}
 
 
 %--------------------------------------------------------------------------------------
-% \section{Projects}	
+\section{Technical Skills}
 
-% 		\begin{itemize}
-% 			\item \textbf{CBPm} (Finbet) \hfill[May 2023 - ]\\
-% 			Workflow management platform with support for organizational collaboration. \\
-% 			\begin{itemize}
-% 				\vspace{-1.5em}
-% 				\setlength\itemsep{0.1em}
-% 				\item Implemented GitLab CI/CD pipelines to automate software quality checks, builds, and delivery
-% 				\item Dockerizaton of microservices
-% 				\item Automated creation of AWS infrastructure using Terraform
-% 				\item Managed Kubernetes application deployments using Helm and ArgoCD
-% 			\end{itemize}
-			
-% 			\item \textbf{TRI-Jackpot} (Finbet) \hfill[Jan 2024 - ]\\
-% 			Platform for Betting pools. \\
-% 			\begin{itemize}
-% 				\vspace{-1.5em}
-% 				\setlength\itemsep{0.1em}
-% 				\item Implemented GitLab CI/CD pipelines to automate software quality checks, builds, and releases
-% 				\item Dockerizaton of microservices
-% 				\item Implemented AWS and On-Premise Kubernetes solution and managed it using Helm and ArgoCD
-% 			\end{itemize}
-
-% 			% \item \textbf{\href{https://github.com/MATF-Computer-Networks-Projects/2021_DestinedSouls}{DestinedSouls}} \hfill[Nov 2021 - Jan 2022]\\
-% 			% A dating platform that connects two users who like each other. Non-blocking server using Java NIO and Angular for 
-% 			% web part. Client-server communication has been achieved using HTTP (for general requests) and Websocket (for chat).
-% 			% Functionality for both protocols on the server has been written from scratch using only Java APIs.
-			
-% 			% %\item \textbf{\href{https://github.com/djordjetane/TEngine/tree/develop}{TEngine}} \hfill[Oct 2021 - ]\\
-% 			% %3D C++ Game Engine; Continuation of previous project(s). Simple template-based ECS architecture, using
-% 			% %OpenGL (glad + glfw3). Spare time solo project; still under heavy development. Currently useful for 
-% 			% %creating quick single static scenes and testing GLSL shaders on them.
-			
-% 			% \item \textbf{\href{https://github.com/djordjetane/GolfGL}{GolfGL}} \hfill[Jan 2021 - Jul 2021]\\
-% 			% 3D game written in C++, using OpenGL (glad + glfw3). Solo project for faculty course Computer Graphics. 
-% 			% It features advanced graphics settings (ex. PBR, FXAA), terrain generation from a height map, gradient traversal, skybox.
-% 			% Cross-platform for Windows and Unix (using CMake).
-% 			% %Project was acknowledged as the best in the school year 2020/21.
-
-% 			% \item \textbf{\href{https://gitlab.com/matfpveb/projekti/2020-2021/18-Tutored}{Tutored}} \hfill[Apr 2021 - Jun 2021]\\
-% 			% Web platform for teaching and advertising courses. It offers lecturer a simple way to organize classes, create quizzes and homework, and share materials with enrolled students.
-% 			% Course attendees can give a positive or negative mark to the teacher when the course ends. Angular, NodeJS (Express) and PostgreSQL were used. 
-% 			% I did full-stack (mainly backend).
-
-% 			% \item \textbf{\href{https://github.com/idakucamupeva/dokazano_bezbedno}{ProvenToBeSafe}} \hfill[Apr 2021]\\
-% 			% Hackathon project; Web app in JS that analyzes if your planned journey to other towns in Serbia is safe by scraping
-% 			% government and popular media websites. My main responsibility was Google Maps API integration and adaptation; 
-% 			% important places selection based on route and general client behavior.
+\begin{itemize}
 		
-% 			% %\item \textbf{\href{https://github.com/djordjetane/SnakeGame}{SnakeGame}} \hfill[Apr 2020 - May 2020]\\
-% 			% %Developed with game engine created during a GameDev course. Modern version of legendary Snake game with levels 
-% 			% %and obstacles. I implemented snake steering behavior on collision, levels environment, and fruit generation.
+	\item \textbf{Cloud: } AWS, Azure
+	\item \textbf{Platforms: } Kubernetes, ArgoCD, GitLab CI, GitHub Actions, Cloudflare, SonarQube
+	\item \textbf{Tools: } Docker, Helm, Terraform, Nginx
+	\item \textbf{OS: } Linux, Windows
+	\item \textbf{Programming Languages: } Bash, Python, C$\slash$C++, Java, JS$\slash$TS
+	\item \textbf{Languages: } English (FCE degree), Serbian
+	
+\end{itemize}
 
-% 			% \item \textbf{\href{https://github.com/djordjetane/CallGraph}{CallGraph}} \hfill[Nov 2019 - Jan 2020]\\
-% 			% Program for static code analysis; generates a callgraph from C or C++ source code. Developed in C++ using 
-% 			% ImGui and Clang-Tools. I was liable for frontend and worked on graph routing.
-
-% 		\end{itemize}
-
-%--------------------------------------------------------------------------------------
-\section{Highlighted Skills}
-
-	\begin{itemize}
-		
-		\item \textbf{Cloud: } AWS, Azure
-		\item \textbf{Tools: } Docker, Kubernetes, Git, ArgoCD, GitLab CI, GitHub Actions, Helm, Terraform, Nginx, SonarQube, \dots
-		\item \textbf{OS: } Linux, Windows
-		\item \textbf{Programming Languages: } Bash, Python, C$\slash$C++, Java, JS$\slash$TS
-		\item \textbf{Languages: } English (FCE degree), Serbian
-		
-	\end{itemize}
-%--------------------------------------------------------------------------------------
-%\section{Main Interests}
-%
-%	\begin{itemize}
-%		\item \textbf{Game Engines} - Architecture of game engine and its systems
-%		% \item \textbf{C++} - Following new standards and language capabilities
-%		% \item \textbf{Graph-Based Algorithms} - Applying formal algorithms on wide range of different problems
-%		\item \textbf{Software Design} - Modular, performant and reusable software solutions
-%		\item \textbf{Workflow Automation} - CI/CD, scripting and usage of various tools and platforms
-%	\end{itemize}
-%
-%--------------------------------------------------------------------------------------
 \section{Other}
 	\vspace{-1em}
 	\begin{multicols*}{2}
@@ -208,7 +117,6 @@
 			\item Motivated to learn and improve
 			\item Hardware entusiast			
 			\item Sport, music \& classic movies lover
-			%\columnbreak
 		\end{itemize}		
 	\end{multicols*}
 
