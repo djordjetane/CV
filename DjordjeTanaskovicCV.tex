@@ -11,7 +11,7 @@
 % \usepackage{microtype}                             
 %\usepackage{lastpage}                       
 %\usepackage[scale=0.9, top=0.5in, bottom=0.5in]{geometry}
-\usepackage[top=0.55in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage[top=0.4in, bottom=0.35in, left=0.5in, right=0.5in]{geometry}
 % \setlength{\hintscolumnwidth}{4.1cm}
 %\usepackage[absolute,overlay]{textpos} 
 \usepackage{mathptmx}
@@ -21,14 +21,14 @@
 
 \usepackage{multicol}
 \usepackage{enumitem}
-\setlist[enumerate,itemize]{itemsep=5pt, leftmargin=12pt}
+\setlist[enumerate,itemize]{itemsep=2pt, leftmargin=12pt}
  
 %\renewcommand{\sectionfont}{\Large\bfseries\scshape}
-\renewcommand{\sectionfont}{\fontsize{16pt}{20pt}\bfseries\scshape}
+\renewcommand{\sectionfont}{\fontsize{14pt}{16pt}\bfseries\scshape}
 \renewcommand{\subsectionrule}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand*{\namefont}{\fontsize{30pt}{36pt}\bfseries\upshape}
+\renewcommand*{\namefont}{\fontsize{26pt}{30pt}\bfseries\upshape}
 %\title{Curriculum vitae}
 \name{}{Đorđe Tanasković}
 \renewcommand*{\addressfont}{\fontsize{10pt}{12pt}\mdseries\upshape}
@@ -52,18 +52,27 @@
 \section{Experience}
 
 \begin{itemize}
-	\item \textbf{DevOps Engineer} \hfill [Oct 2024 - Present]\\
+	\item \textbf{Senior DevOps Engineer} \hfill [Jan 2026 - Present]\\
 	\textit{Gambling.com Group}
-
 	\begin{itemize}
 		\vspace{-0.75em}
 		\setlength\itemsep{0.1em}
-		\item Led the standardization of container workloads across the organization, reducing deployment time by 40\% and improving consistency
+		\item Built an Internal Developer Platform (IDP) enabling developer self-service: automated AWS infrastructure provisioning for PHP/Laravel applications, generation of GitHub Actions build/deploy workflows, and on-demand ephemeral environments for feature-branch testing
+		\item Adopted by 4 teams (\textasciitilde25 developers, 4 applications); cut new application onboarding from 1--2 days to under an hour
+		\item Removed DevOps as a bottleneck for standalone Laravel apps by automating provisioning of ECS, RDS, ElastiCache (Redis) and Cloudflare resources
 	\end{itemize}
 
-	\item \textbf{DevOps Consultant} \hfill [Oct 2024 - Jun 2025]\\
-	\textit{Fincore Ltd.}
+	\item \textbf{DevOps Engineer} \hfill [Oct 2024 - Jan 2026]\\
+	\textit{Gambling.com Group}
+	\begin{itemize}
+		\vspace{-0.75em}
+		\setlength\itemsep{0.1em}
+		\item Created reusable Terraform modules to standardize and accelerate infrastructure configuration and provisioning across AWS and Cloudflare
+		\item Designed a zero-downtime system for Cloudflare API token provisioning and rotation
+	\end{itemize}
 
+	\item \textbf{DevOps Consultant (Part-time)} \hfill [Oct 2024 - Jun 2025]\\
+	\textit{Fincore Ltd.}
 	\begin{itemize}
 		\vspace{-0.75em}
 		\setlength\itemsep{0.1em}
@@ -74,23 +83,22 @@
 
 	\item \textbf{Junior DevOps Engineer} \hfill [May 2023 - Oct 2024]\\
 	\textit{Finbet d.o.o.}
-
 	\begin{itemize}
 		\vspace{-0.75em}
 		\setlength\itemsep{0.1em}
 		\item Designed and implemented comprehensive GitLab CI/CD pipelines that reduced deployment failures by 50\% and automated 90\% of the release process
 		\item Containerized 15+ .NET Core microservices using Docker, improving application portability and reducing environment inconsistencies
 		\item Architected and deployed AWS infrastructure using Terraform, implementing infrastructure-as-code best practices
-		\item Managed Kubernetes clusters with using Helm and ArgoCD, achieving 99.9\% uptime
+		\item Managed Kubernetes clusters using Helm and ArgoCD, achieving 99.9\% uptime
 	\end{itemize}
 
-\end{itemize}	
+\end{itemize}
 
 \section{Certification}
 
 \begin{itemize}
 	\item \textbf{\href{https://aws.amazon.com/certification/certified-solutions-architect-associate/}{AWS Certified Solutions Architect - Associate}} \hfill [Jan 2024]\\
-	\textit{\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/c546a05a82c243b895493ff0316a1e67}{https://bit.ly/48d291i}}
+	\fontsize{8}{1}\textit{\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/c546a05a82c243b895493ff0316a1e67}{https://cp.certmetrics.com/amazon/en/public/verify/credential/c546a05a82c243b895493ff0316a1e67}}
 	
 \end{itemize}
 
@@ -102,24 +110,12 @@
 		
 	\item \textbf{Cloud: } AWS, Azure
 	\item \textbf{Platforms: } Kubernetes, ArgoCD, GitLab CI, GitHub Actions, Cloudflare, SonarQube
-	\item \textbf{Tools: } Docker, Helm, Terraform, Nginx
+	\item \textbf{Tools: } Docker, Helm, Terraform, Nginx, Grafana, CloudWatch
 	\item \textbf{OS: } Linux, Windows
-	\item \textbf{Programming Languages: } Bash, Python, C$\slash$C++, Java, JS$\slash$TS
+	\item \textbf{Programming Languages: } Bash, Python, JS$\slash$TS
 	\item \textbf{Languages: } English (FCE degree), Serbian
-	
-\end{itemize}
 
-\section{Other}
-	\begin{multicols*}{2}
-		\begin{itemize}
-			\setlength\itemsep{5pt}
-			\item Enjoy working in a team
-			\item Motivated to learn and improve
-			\columnbreak
-			\item Hardware entusiast			
-			\item Sport, music \& classic movies lover
-		\end{itemize}		
-	\end{multicols*}
+\end{itemize}
 
 %--------------------------------------------------------------------------------------
 \end{document}
